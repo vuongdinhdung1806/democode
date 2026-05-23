@@ -838,7 +838,7 @@ img {
   min-width: 300px;
 }
 
-/* khi popup hiện */
+/* popup hiện */
 .popup-overlay.show {
   opacity: 1;
   visibility: visible;
