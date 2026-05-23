@@ -60,3 +60,25 @@ backToTop.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+//popup
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("closePopup");
+
+  // hiện popup sau 1.5s
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      popup.classList.add("show");
+    }, 1500);
+
+    // tự đóng sau 5 giây
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 7000);
+  });
+
+  // đóng thủ công
+  closePopup.addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+});
